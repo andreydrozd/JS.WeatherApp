@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Weather App</title>
+
+	<!-- Bootstrap and CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+	
+	<div id="btn-container">
+		<input type="text" id="zipcode-entry" maxlength="5">
+		<button id="show-weather-zipcode">Get weather by zipcode</button>
+		<hr>
+		<button id="show-weather-geolocation">Get weather by finding me.</button>
+	</div>
+
+	<div class="container" id="upper-half">
+		<div class="row">
+			<h1 class="col centered" id="location">Somewhere, USA</h1>
+		</div>
+		<div class="row">
+			<div class="col centered" id="updated-time">Latest</div>
+		</div>
+		<div class="row justify-content-center" id="current-conditions-row">
+			<div class="col-4"></div>
+			<div class="col" id="current-temp-container">
+				<div id="current-temp">0&deg;</div>
+			</div>
+			<div class="col" id="current-conditions-container">
+				<div class="img-container">
+					<img src="" id="current-conditions-icon" alt="current conditions icon">
+				</div>
+				<h4 id="current-conditions"></h4>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		<div class="row justify-content-center">
+			<h5 id="feels-like-temp"></h5>
+		</div>
+		<hr>
+		<div class="row justify-content-center">
+			<p id="wind-conditions"></p>
+		</div>
+		<div class="row justify-content-center">
+			<div id="tonights-forecast" class="centered"></div>
+		</div>
+
+	</div>
+
+	<div class="container" id="lower-half">
+		<div class="row">
+			<div class="col-4 card-container">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title" id="first-day-dow">First Day</h4>
+						<h5 id="first-day-month-and-date"></h5>
+						<div class="img-container">
+							<img class="" id="first-day-icon" src="" alt="weather icon">						
+						</div>
+						<p class="card-text" id="first-day-high-and-low"></p>
+						<p class="card-text" id="first-day-forecast-text"></p>						
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+			</div>
+				
+			<div class="col-4 card-container">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title" id="second-day-dow">Second Day</h5>
+						<h5 id="second-day-month-and-date"></h5>
+						<div class="img-container">
+							<img class="" id="second-day-icon" src="" alt="weather icon">	
+						</div>							
+						<p class="card-text" id="second-day-high-and-low"></p>
+						<p class="card-text" id="second-day-forecast-text"></p>												
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+			</div>
+				
+			<div class="col-4 card-container">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title" id="third-day-dow">Third Day</h4>
+						<h5 id="third-day-month-and-date"></h5>
+						<div class="img-container">
+							<img class="" id="third-day-icon" src="" alt="weather icon">	
+						</div>						
+						<p class="card-text" id="third-day-high-and-low"></p>
+						<p class="card-text" id="third-day-forecast-text"></p>						
+						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+	</div>
+
+
+	<!-- jQuery and Bootstrap JS -->
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+</html>

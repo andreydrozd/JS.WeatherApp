@@ -1,0 +1,74 @@
+.img-container {
+	height: 100px;
+	width: 100px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+#btn-container {
+	margin: 25% 25%;
+	border: 2px solid saddlebrown;
+}
+
+input, button {
+	display: block;
+	margin: 1% auto;
+}
+
+
+/* Upper half of the app*/
+#upper-half{
+	width: 80%;
+	border: 1px solid lightgray;
+	border-radius: 1%;
+	margin-bottom: 2px;
+	display: none;
+}
+
+#current-temp-container{
+	padding: 0;
+}
+
+#current-conditions-container{
+	padding: 15px 0 0 0;
+}
+
+#current-conditions {
+	padding-left: 25px;
+}
+
+#current-conditions-row{
+	margin-bottom: 5px;
+}
+
+#current-temp {
+	font-size: 7em;
+	text-align: right;
+}
+
+#current-conditions-icon{
+	display: block;
+}
+
+#tonights-forecast {
+	width: 60%;
+	margin-bottom: 5px;
+}
+
+/* Lower half of the app*/
+#lower-half{
+	width: 80%;
+	display: none;
+}
+
+.card-container{
+	padding: 0;
+	width: 100%;
+}
+
+.centered{
+	text-align: center;
+}
